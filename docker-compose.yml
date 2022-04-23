@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: .
+      target: dev
+    volumes:
+      - .:/opt/app/api
+    environment:
+      localhost: ":8080"
+    ports:
+    - "8080:8080"
