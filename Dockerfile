@@ -1,5 +1,7 @@
 FROM golang:1.17-alpine as dev
 
+LABEL authors="pfebrian@gmail.com"
+
 # Run the air command in the directory where our code will live
 WORKDIR /opt/app/api
 
